@@ -23,18 +23,18 @@ class NoteItem extends StatelessWidget {
                     'Flutter Tips',
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 26,
+                      fontSize: 24,
                     ),
                   ),
                   subtitle: Padding(
                     padding: const EdgeInsets.symmetric(
-                      vertical: 16,
+                      vertical: 12,
                     ),
                     child: Text(
                       'Build your career with tharwat samy',
                       style: TextStyle(
                         color: Colors.black.withOpacity(.5),
-                        fontSize: 18,
+                        fontSize: 16,
                       ),
                     ),
                   ),
@@ -45,7 +45,7 @@ class NoteItem extends StatelessWidget {
                     'August 6, 2024',
                     style: TextStyle(
                       color: Colors.black.withOpacity(.5),
-                      fontSize: 14,
+                      fontSize: 12,
                     ),
                   ),
                 ),
@@ -58,7 +58,7 @@ class NoteItem extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(
                   FontAwesomeIcons.xmark,
-                  size: 24,
+                  size: 22,
                   color: Colors.black,
                 ),
               ),
