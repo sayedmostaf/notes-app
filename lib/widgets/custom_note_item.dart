@@ -13,45 +13,53 @@ class NoteItem extends StatelessWidget {
           color: const Color(0xffffcc80),
           borderRadius: BorderRadius.circular(16),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+        child: Stack(
           children: [
-            ListTile(
-              title: const Text(
-                'Flutter Tips',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 26,
-                ),
-              ),
-              subtitle: Padding(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 16,
-                ),
-                child: Text(
-                  'Build your career with tharwat samy',
-                  style: TextStyle(
-                    color: Colors.black.withOpacity(.5),
-                    fontSize: 18,
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                ListTile(
+                  title: const Text(
+                    'Flutter Tips',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 26,
+                    ),
+                  ),
+                  subtitle: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 16,
+                    ),
+                    child: Text(
+                      'Build your career with tharwat samy',
+                      style: TextStyle(
+                        color: Colors.black.withOpacity(.5),
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
                 ),
-              ),
-              trailing: IconButton(
+                Padding(
+                  padding: const EdgeInsets.only(right: 24),
+                  child: Text(
+                    'August 6, 2024',
+                    style: TextStyle(
+                      color: Colors.black.withOpacity(.5),
+                      fontSize: 14,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Positioned(
+              top: 4,
+              right: 8,
+              child: IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  FontAwesomeIcons.trash,
+                  FontAwesomeIcons.xmark,
                   size: 24,
                   color: Colors.black,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(right: 24),
-              child: Text(
-                'August 6,2024',
-                style: TextStyle(
-                  color: Colors.black.withOpacity(.5),
-                  fontSize: 16,
                 ),
               ),
             ),
