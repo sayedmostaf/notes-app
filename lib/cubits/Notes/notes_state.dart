@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/models/note_model.dart';
 
 @immutable
-abstract class AddNoteState {}
+abstract class NotesState {}
 
-class NotesIntial extends AddNoteState {}
+class NotesIntial extends NotesState {}
 
-class NotesLoading extends AddNoteState {}
+class NotesLoading extends NotesState {}
 
-class NotesSuccess extends AddNoteState {
+class NotesSuccess extends NotesState {
   final List<NoteModel> notes;
   NotesSuccess(this.notes);
 }
 
-class NotesFailure extends AddNoteState {
+class NotesFailure extends NotesState {
   final String errorMessage;
   NotesFailure(this.errorMessage);
 }
